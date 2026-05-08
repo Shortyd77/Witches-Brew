@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul,figure, figcaption, section
+body, header, nav, main, footer, h1, div, img, ul,figure, figcaption, section,
 article, aside, audio, video {
     margin: 0;
     padding: 0;
@@ -250,11 +250,13 @@ article ul {
     justify-content: center;
 }
 
-img url ("images/biopic.jpg") {
+.bio-pic {
     max-width: 25%;
     max-height: 15%;
-    float:left;
+    float: left;
 }
+
+
 
 .text {
     font-size:20px;
@@ -511,7 +513,8 @@ form {
         animation-delay: 3s;
         -webkit-animation-duration: 5s;
         animation-duration: 5s;
-    }
+	}
+}
     
     
 /* Media Query for Desktop Viewport */
@@ -642,6 +645,9 @@ form {
     grid-column: 1/span 3;
 }
 
+}
+
+
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px) {
@@ -654,6 +660,7 @@ form {
     table {
         width: 80%;
     }
+}
 
 /* Media Query for Print */
 @media print {
@@ -663,4 +670,5 @@ form {
 	    background-color: #fff;
 	    color: #000;
 	}
+}
 
