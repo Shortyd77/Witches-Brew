@@ -1,1 +1,666 @@
-/*Author:Danielle Thompson	Date:2-19-2025File Name: styles.css*//* CSS Reset */body, header, nav, main, footer, h1, div, img, ul,figure, figcaption, sectionarticle, aside, audio, video {    margin: 0;    padding: 0;    border: 0;}/* Style rules for body and images */body {    background-color: #ffa07a;    font-family: 'Arial', sans-serif;    font-size: 20px;}body {    background: url("images/bannermagic.jpeg") no-repeat center top,                url("images/bannercoven2.png") no-repeat center bottom;    background-size: cover, contain;}img,video {    max-width: 100%;    display: block;    height: auto; /* Keeps aspect ratio */}/* Set a uniform size for specific images */.kitchenmagic-img, .spells-img {    width: 400px; /* Adjust to your preference */    height: 300px; /* Keeps uniformity */    object-fit: cover; /* Crops images to fit without distortion */    display: block;    margin: 0 auto;}#coven img, #moons img, #spells img, #contact img {    width: 100%;    height: auto;    display: block;    margin: 0 auto;    max-height: 350px; /* Adjust the height to prevent overlapping */    object-fit: cover;}video {    border: 5px solid black;    padding: 10px;    border-radius: 10px;}/* Style rules for box sizing applies to all elements */* {    box-sizing: border-box;}/* style rules for skip navigation link */.skip {    position: absolute;    left: -999;}.skip:focus {    color: 000;    background-color: #000;    text-decoration: none;    padding: 0.5%;    top: auto;    left: auto;    right: 1px;    z-index: 1;}/* Style rules for mobile viewpoint *//* style rules for header */header {    height: auto; /* Allows it to adjust */    min-height: 150px;    max-height: 250px; /* Prevents it from getting too big */    overflow: hidden; /* Stops overlapping */    background-color: #ffe4e1;}header h1 {    margin: 0 auto;    padding: 2%;    font-size: 200%;    color: #000;    text-align: inherit;    font-family: "Pirata One", serif !important; /* Forces Pirata One */}header img {    max-width: 60%; /* Ensures it doesn’t take up too much space */    max-height: 150px; /* Prevents it from getting too tall */    height: auto;    display: block;    margin: 0 auto;}/* Style rules for hamburger menu */.mobile-nav a {    color: #fff;    font-family: 'Francois One', sans-serif;    text-align: center;    font-size: 2em;    text-decoration: none;    padding: 3%;    display: block;}.mobile-nav {    text-align: center;}.mobile-nav a.menu-icon {    display: block;    position: absolute;    right: 0;    top: 0;}#menu-links {    display: none; /* Hidden by default */    flex-direction: column; /* Stacks menu links vertically */    text-align: center;    background-color: #ffa07a; /* Matches site theme */    width: 100%;    position: absolute;    top: 50px; /* Adjust spacing from the top */    left: 0;    z-index: 1000;}/* Show mobile class, hide tablet-desktop and menu-links id */.mobile {    display: block; /* Make sure it shows on mobile */    text-align: center; /* Center the text */    padding: 10px;}.tablet-desktop, #menu-links {    display: none;}/* Style rule for mobile class header img, hide tablet-desktop */header img {    max-width: 60%; /* Ensures it doesn’t take up too much space */    max-height: 150px; /* Prevents it from getting too tall */    height: auto;    display: block;    margin: 0 auto;}/* Style rules for main content */main {    background-color: #ffe4e1;    padding: 2%;    font-size: 1.15;    font-family: "pirata-one-regular" serif;}video {    margin: 0 auto 4%;}.mobile h3 {    text-shadow: 5px 5px 8px #ccc;}article {    padding: 2%;}article h3 {    text-align: center;    text-decoration: none;}article img {    margin: 0 auto;}article ul {    margin-left: 10%;}.action {    font-size: 2.35em;    color: #1E90FF;    font-weight: bold;    text-shadow: 5px 5px 8px #ccc;}.frame {    position: relative;    max-width: 450px;    margin: 2% auto;}.pic-text {    bottom: 0;    background: rgba(0, 0, 0, 0.5);    color: #fff;    width: 100%;    padding: 20px;    text-align: center;    font-weight: normal;    font-family: 'Akaya Kanadaka' arial sans-serif;    font-size: 1.5em;    position: absolute;}.round {    border-radius: 8px;}#contact {    text-align: center;}#contact .contact-email-link {    color: #000;    text-decoration: none;    text-align: top;}.container {    display: flex;    align-items: center;    justify-content: center;}img url ("images/biopic.jpg") {    max-width: 25%;    max-height: 15%;    float:left;}.text {    font-size:20px;    padding-left: 20px;    padding-top: 20%;    float:left;    text-align: top;}#form {    margin: 2%;    background-color: #F0F8FF;    padding: 2%;}#form h2 {    text-align: center;}/* Style rules for form elements */fieldset, input, select, textarea {    margin-bottom: 2%;}fieldset legend {    font-weight: normal;    font-size: 1.25em;}label {    display: block;    padding-top: 3%;}form #submit {    margin: 0 auto;    border: none;    padding: 2%;    font-size: 1em;    border-radius: 10px;    display: block;    background-color: #fff;}/* style rules for footer content */footer {    background-color: #ffa07a !important; /* Forces the color */    color: #000; /* Text color for contrast */    padding: 20px 0;    text-align: center;}footer .copyright {    text-align: center;    font-size: 1em;    width: 50%;    padding: 2% 4%;    float: left;}footer p a {    color: #000;    text-decoration: none;    font-size: 1em;}.social {    float: right;    width: 10%;    padding: 2%;}.social img {    display: inline-block;    padding: 5%;}/* Media Query for Tablet Viewport */@media screen and (min-width: 630px), print {/* Show tablet-desktop navigation */.tablet-desktop {    display: block;}/* Fix for hamburger menu */#menu-links {    display: block; /* Ensures menu is visible */}.mobile-nav {    display: none; /* Hide the mobile nav on larger screens */}/* Tablet Viewport: Show table-desktop class, hide mobile class */.tablet-desktop {    display: block;}.mobile, .moblie-nav {    display: none;}/* Tablet Viewport: Style rule for header */header {    padding-bottom: 2%;}header img {        width: 80%; /* Ensures it doesn’t take up the full width */        max-height: 155px; /* Keeps it from getting too big */        display: block; /* Make sure it's visible */}nav ul {    list-style-type: none;    text-align: center; /* Centers the navigation */    font-family: "Pirata One", serif; /* Ensures Pirata One is used */    display: flex;    justify-content: center; /* Centers navigation */    padding: 0;}nav li {    font-size: 1.5em;    font-family: "Pirata One", sans-serif;    padding: 10px 15px; /* adds spacing between menu items */}nav li:last-child {    border-right: none;}nav li a {    padding: 0.1em 0.75em;    display: block;    color: #000;    text-decoration: none;}/* Tablet Viewport: Style rules for main content area */main ul {    margin: 0 0 4% 10%;}.grid {    display: grid;    grid-template-columns: auto auto auto;    grid-gap: 20px;}.pic-text {    font-size: 1em;    padding: 10px;}aside {    text-align: center;    font-size: 1.5em;    font-style: normal;    font-weight: normal;    padding: 5%;    background-color: #F0F8FF;    box-shadow: 5px 5px 8px #000;    text-shadow: 5px 5px 5px #b3b3b3;    border-radius: 0 40px;    font-family: 'Rye', serif; /* Change to your chosen font */}.grid-item4 {    grid-column: 1/ span 3;}/* Box style for paragraphs in Spells & Kitchen Magic */.spell-box, .kitchen-box {    border: 3px solid #5f3c2d; /* Border color (change as needed) */    background-color: #ffe4e1; /* Light pinkish background */    padding: 15px; /* Adds spacing inside */    margin: 20px 0; /* Adds space around it */    border-radius: 10px; /* Rounds the corners */    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */}strong, b {    font-weight: 500; /* Less bold than normal bold (700) */    font-family: "MedievalSharp", cursive !important; /* Forces new font */}/* Tablet Viewport: Style rules for table */table {    border: 0.5px solid #000;    border-collapse: collapse;    margin: 0%;    width: 100%;}caption {    font-size: 2em;    font-weight: normal;    font-style: normal;    padding: 2%;}th, td {    border: 1px solid #000;    padding: 2%;}th {    background-color: #000;    color: #fff;    font-size: 1em;}tr:nth-child(odd) {    background-color: #ccc;}/* Tablet Viewport: Style rule for form element */form {    width: 50%;    margin: 0 auto;}/* Tablet Viewport: Animation */    @-webkit-keyframes text-animation {        0% { font-size: 1em; }        50% { font-size: 2em; }        100% { font-size: 1.35em; }    }        @keyframes text-animation {        0% { font-size: 1em; }        50% { font-size: 2em; }        100% { font-size: 1.35em; }    }        figcaption {        -webkit-animation-name: text-animation;        animation-name: text-animation;        -webkit-animation-delay: 3s;        animation-delay: 3s;        -webkit-animation-duration: 5s;        animation-duration: 5s;    }        /* Media Query for Desktop Viewport */@media screen and (min-width: 1015px), print {  /* Ensure menu links are visible on desktop */#menu-links {    display: block;}.mobile-nav {    display: none;}/* Desktop Viewport: Style rule for header */header {        width: 100%; /* Ensure full width */        float: none; /* Stop floating left */        text-align: center; /* Center content */        padding: 20px 0; /* Adds space */    }    header h1 {        font-size: 2.5em; /* Make title bigger */        text-align: center; /* Ensure centering */    }    header img {        max-width: 200px; /* Resize logo properly */        height: auto;        display: block;        margin: 0 auto; /* Center logo */    }.pirata-one-regular {  font-family: "Pirata One", serif;  font-weight: 400;  font-style: normal;}/* Desktop Viewport: Style rules for nav area */nav {    position: relative;    z-index: 10; /* Ensures it sits above the image */    background-color: #ffa07a; /* Keeps background solid */    padding: 15px 0; /* Adds space above and below */    margin-top: 10px; /* Prevents it from touching the header */}nav ul {    text-align: center; /* Centers navigation links */    padding: 0;    margin: 0 auto; /* Ensures it centers horizontally */    display: flex;    justify-content: center;}nav li a {    padding: 0.5em 1em;}nav li {    border: none;}nav li a:hover {    color: #5f9ea0;    background-color: #fff;    transform: scale(1.3);}/* Desktop Viewport: Style rules for main content */main {    clear: left;}main h1 {    font-size: 1.8em;}main h1 {    font-size: 1.8em;}article h3 {    font-size: 1.75em;}article h4 {    font-size: 1.75em;}.pic-text {    font-size: 1.5em;    padding: 20px;}.frame {    opacity: 0.9;}.frame:hover {    opacity: 1;    box-shadow: 8px 8px 10px #808080;    transform: translateY(10px);}.offer:hover {    transform: scale(1.25);    cursor: pointer;}/* Desktop Viewport: Style rules for form elements */form {    width: auto;}.form-grid {    display: grid;    grid-template-columns: auto auto auto;    grid-gap: 20px;}.btn {    grid-column: 1/span 3;}/* Media Query for Large Desktop Viewports */@media screen and (min-width: 1921px) {    #container {        width: 1920px;        margin: 0 auto;    }        table {        width: 80%;    }/* Media Query for Print */@media print {	body {	    background-color: #fff;	    color: #000;	}
+/*
+Author:Danielle Thompson	
+Date:2-19-2025
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul,figure, figcaption, section
+article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #ffa07a;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background: url("../images/bannermagic.jpeg") no-repeat center top,
+                url("../images/bannercoven2.jpg") no-repeat center bottom;
+}
+
+img,video {
+    max-width: 100%;
+    display: block;
+    height: auto; /* Keeps aspect ratio */
+}
+
+/* Set a uniform size for specific images */
+.kitchenmagic-img, .spells-img {
+    width: 400px; /* Adjust to your preference */
+    height: 300px; /* Keeps uniformity */
+    object-fit: cover; /* Crops images to fit without distortion */
+    display: block;
+    margin: 0 auto;
+}
+
+#coven img, #moons img, #spells img, #contact img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 350px; /* Adjust the height to prevent overlapping */
+    object-fit: cover;
+}
+
+
+video {
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Style rules for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999;
+}
+
+.skip:focus {
+    color: 000;
+    background-color: #000;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Style rules for mobile viewpoint */
+
+/* style rules for header */
+header {
+    height: auto; /* Allows it to adjust */
+    min-height: 150px;
+    max-height: 250px; /* Prevents it from getting too big */
+    overflow: hidden; /* Stops overlapping */
+    background-color: #ffe4e1;
+}
+
+
+header h1 {
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 200%;
+    color: #000;
+    text-align: inherit;
+    font-family: "Pirata One", serif !important; /* Forces Pirata One */
+}
+
+header img {
+    max-width: 60%; /* Ensures it doesn’t take up too much space */
+    max-height: 150px; /* Prevents it from getting too tall */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav {
+    text-align: center;
+}
+
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#menu-links {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stacks menu links vertically */
+    text-align: center;
+    background-color: #ffa07a; /* Matches site theme */
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Adjust spacing from the top */
+    left: 0;
+    z-index: 1000;
+}
+
+
+/* Show mobile class, hide tablet-desktop and menu-links id */
+.mobile {
+    display: block; /* Make sure it shows on mobile */
+    text-align: center; /* Center the text */
+    padding: 10px;
+}
+
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* Style rule for mobile class header img, hide tablet-desktop */
+header img {
+    max-width: 60%; /* Ensures it doesn’t take up too much space */
+    max-height: 150px; /* Prevents it from getting too tall */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Style rules for main content */
+main {
+    background-color: #ffe4e1;
+    padding: 2%;
+    font-size: 1.15;
+    font-family: "pirata-one-regular" serif;
+}
+
+
+
+video {
+    margin: 0 auto 4%;
+}
+
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+    text-decoration: none;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+
+
+.action {
+    font-size: 2.35em;
+    color: #1E90FF;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Akaya Kanadaka' arial sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#contact {
+    text-align: center;
+}
+
+
+#contact .contact-email-link {
+    color: #000;
+    text-decoration: none;
+    text-align: top;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img url ("images/biopic.jpg") {
+    max-width: 25%;
+    max-height: 15%;
+    float:left;
+}
+
+.text {
+    font-size:20px;
+    padding-left: 20px;
+    padding-top: 20%;
+    float:left;
+    text-align: top;
+}
+
+#form {
+    margin: 2%;
+    background-color: #F0F8FF;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    padding: 2%;
+    font-size: 1em;
+    border-radius: 10px;
+    display: block;
+    background-color: #fff;
+}
+
+
+/* style rules for footer content */
+footer {
+    background-color: #ffa07a !important; /* Forces the color */
+    color: #000; /* Text color for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer .copyright {
+    text-align: center;
+    font-size: 1em;
+    width: 50%;
+    padding: 2% 4%;
+    float: left;
+}
+
+
+footer p a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+.social {
+    float: right;
+    width: 10%;
+    padding: 2%;
+}
+
+.social img {
+    display: inline-block;
+    padding: 5%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+/* Show tablet-desktop navigation */
+.tablet-desktop {
+    display: block;
+}
+
+/* Fix for hamburger menu */
+#menu-links {
+    display: block; /* Ensures menu is visible */
+}
+
+.mobile-nav {
+    display: none; /* Hide the mobile nav on larger screens */
+}
+
+/* Tablet Viewport: Show table-desktop class, hide mobile class */
+.tablet-desktop {
+    display: block;
+}
+
+.mobile, .moblie-nav {
+    display: none;
+}
+
+/* Tablet Viewport: Style rule for header */
+header {
+    padding-bottom: 2%;
+}
+
+
+header img {
+        width: 80%; /* Ensures it doesn’t take up the full width */
+        max-height: 155px; /* Keeps it from getting too big */
+        display: block; /* Make sure it's visible */
+}
+
+
+nav ul {
+    list-style-type: none;
+    text-align: center; /* Centers the navigation */
+    font-family: "Pirata One", serif; /* Ensures Pirata One is used */
+    display: flex;
+    justify-content: center; /* Centers navigation */
+    padding: 0;
+}
+
+
+nav li {
+    font-size: 1.5em;
+    font-family: "Pirata One", sans-serif;
+    padding: 10px 15px; /* adds spacing between menu items */
+}
+
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Tablet Viewport: Style rules for main content area */
+main ul {
+    margin: 0 0 4% 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+
+
+.pic-text {
+    font-size: 1em;
+    padding: 10px;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5%;
+    background-color: #F0F8FF;
+    box-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 5px #b3b3b3;
+    border-radius: 0 40px;
+    font-family: 'Rye', serif; /* Change to your chosen font */
+}
+
+
+.grid-item4 {
+    grid-column: 1/ span 3;
+}
+
+/* Box style for paragraphs in Spells & Kitchen Magic */
+.spell-box, .kitchen-box {
+    border: 3px solid #5f3c2d; /* Border color (change as needed) */
+    background-color: #ffe4e1; /* Light pinkish background */
+    padding: 15px; /* Adds spacing inside */
+    margin: 20px 0; /* Adds space around it */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+
+strong, b {
+    font-weight: 500; /* Less bold than normal bold (700) */
+    font-family: "MedievalSharp", cursive !important; /* Forces new font */
+}
+
+
+
+/* Tablet Viewport: Style rules for table */
+table {
+    border: 0.5px solid #000;
+    border-collapse: collapse;
+    margin: 0%;
+    width: 100%;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: normal;
+    font-style: normal;
+    padding: 2%;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 2%;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    font-size: 1em;
+}
+
+tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+/* Tablet Viewport: Style rule for form element */
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Tablet Viewport: Animation */
+    @-webkit-keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+    
+    @keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+    
+    figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+    }
+    
+    
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+ 
+ /* Ensure menu links are visible on desktop */
+#menu-links {
+    display: block;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* Desktop Viewport: Style rule for header */
+header {
+        width: 100%; /* Ensure full width */
+        float: none; /* Stop floating left */
+        text-align: center; /* Center content */
+        padding: 20px 0; /* Adds space */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Make title bigger */
+        text-align: center; /* Ensure centering */
+    }
+
+    header img {
+        max-width: 200px; /* Resize logo properly */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center logo */
+    }
+
+.pirata-one-regular {
+  font-family: "Pirata One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Desktop Viewport: Style rules for nav area */
+nav {
+    position: relative;
+    z-index: 10; /* Ensures it sits above the image */
+    background-color: #ffa07a; /* Keeps background solid */
+    padding: 15px 0; /* Adds space above and below */
+    margin-top: 10px; /* Prevents it from touching the header */
+}
+
+
+nav ul {
+    text-align: center; /* Centers navigation links */
+    padding: 0;
+    margin: 0 auto; /* Ensures it centers horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+
+nav li a {
+    padding: 0.5em 1em;
+}
+
+nav li {
+    border: none;
+}
+
+nav li a:hover {
+    color: #5f9ea0;
+    background-color: #fff;
+    transform: scale(1.3);
+}
+
+/* Desktop Viewport: Style rules for main content */
+main {
+    clear: left;
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+article h3 {
+    font-size: 1.75em;
+}
+
+article h4 {
+    font-size: 1.75em;
+}
+
+.pic-text {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.frame {
+    opacity: 0.9;
+}
+
+.frame:hover {
+    opacity: 1;
+    box-shadow: 8px 8px 10px #808080;
+    transform: translateY(10px);
+}
+
+.offer:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+/* Desktop Viewport: Style rules for form elements */
+form {
+    width: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.btn {
+    grid-column: 1/span 3;
+}
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+    table {
+        width: 80%;
+    }
+
+/* Media Query for Print */
+@media print {
+
+
+	body {
+	    background-color: #fff;
+	    color: #000;
+	}
+
